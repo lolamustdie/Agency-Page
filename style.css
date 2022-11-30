@@ -1,68 +1,341 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 0;
 }
 header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 25px 25px 15px;
 }
-a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  font-size: 1.6vw;
+.logo img {
+    width: 168px;
+    height: auto;
 }
-nav {
-  display: flex;
-  width: 28vw;
-  justify-content: space-between;
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
-footer {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+.menu ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    display: inline-block;
+}
+.contactBtn a {
+    display: block;
+    width: 200px;
+    height: 54px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #0099FF;
+    line-height: 54px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.homeContent {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 5% 100px;
+}
+.homeText {
+    width: 50%;
+}
+.homeText h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.015em;
+    color: #333333;
+}
+.homeText p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #333333;
+}
+.homePhoto {
+    width: 50%;
+    height: auto;
+}
+.homePhoto img {
+    width: 100%;
+}
+.homeBtn .start, .homeBtn .more {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #0099FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+.homeBtn .more {
+    background: #FFFFFF;
+    color: #0099FF;
+    border-color: #0099FF;
+}
+.services, .meetOurTeam {
+    background: rgba(0, 153, 255, 0.04);
+    padding: 120px 80px;
+    text-align: center;
+    color: #333333;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.services .servicesText h6, .meetOurTeam h6, .aboutText h6, .portfolioText h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.services .servicesText h2, .meetOurTeam h2, .aboutText h2, .portfolioText h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 138%;
+}
+.services .servicesText p {
+    display: inline-block;
+    width: 612px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #494949;
+}
+.servicesItems {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 72px;
+}
+.servicesItems .sItem {
+    background: #FFFFFF;
+    border-radius: 4px;
+    height: 342px;
+    padding: 0 26px;
+    position: relative;
+}
+.servicesItems .sItem a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.servicesItems .sItem img {
+    width: 100px;
+    padding-top: 57px;
+    padding-bottom: 16px;
+}
+.servicesItems .sItem h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: #333333;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.servicesItems .sItem p {
+    width: 255px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: #494949;
+}
+.aboutUs {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 5% 100px;
+}
+.aboutText {
+    width: 50%;
+    text-align: left;
+
+}
+.aboutText h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.015em;
+    color: #333333;
+}
+.aboutText p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #333333;
+}
+.aboutPhoto {
+    width: 50%;
+    height: auto;
+}
+.aboutPhoto img {
+    width: 100%;
+}
+.aboutBtn {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #0099FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+.meetOurTeam {
+    padding-bottom: 210px;
+}
+.meetText, .portfolioText {
+    width: 494px;
+    margin: 0 auto;
+}
+.meetItems {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 60px;
+}
+.mItem{
+    position: relative;
+  }
+  .meetItems .mItem img {
+    width: 308px;
+    border-radius: 5px;
+}
+.meetItems .mItem .mItemDesc .contact img{
+    width: 15px;
+    padding-right: 8px;
+  }
+.meetItems .mItem .mItemDesc {
+    background: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 24px;
+    right: 24px;
+    height: 133px;
+    box-shadow: 0px 10px 20px rgba(164, 217, 253, 0.15);
+    border-radius: 5px;
+    text-align: left;
+}
+.meetItems .mItem .mItemDesc .contact {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.meetItems .mItem .mItemDesc .name {
+    padding-left: 8px;
+    padding-top: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.meetItems .mItem .mItemDesc .position {
+    padding-left: 8px;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #494949;
+}
+.portfolio {
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portolioItems {
+    display: flex;
+    flex-direction: column;
+}
+.realEstate {
+    box-shadow: 0px 4px 8px #000 ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 575px;
+    border-radius: 5px;
+}
+.portfolioText {
+    text-align: center;
+}
+.realText {
+    margin-top: 20px
+}
+.seeAll {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #0099FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
 }
