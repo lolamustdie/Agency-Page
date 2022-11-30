@@ -127,3 +127,70 @@ header {
     color: #0099FF;
     border-color: #0099FF;
 }
+.services {
+    background: rgba(0, 153, 255, 0.04);
+    padding: 120px 80px;
+    text-align: center;
+    color: #333333;
+}
+.services .servicesText h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.services .servicesText h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 138%;
+}
+.services .servicesText p {
+    display: inline-block;
+    width: 612px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    color: #494949;
+}
+.servicesItems {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 72px;
+}
+.servicesItems .sItem {
+    background: #FFFFFF;
+    border-radius: 4px;
+    height: 342px;
+    padding: 0 26px;
+    position: relative;
+}
+.servicesItems .sItem a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.servicesItems .sItem img {
+    width: 100px;
+    padding-top: 57px;
+    padding-bottom: 16px;
+}
+.servicesItems .sItem h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: #333333;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.servicesItems .sItem p {
+    width: 255px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    color: #494949;
+}
+  
