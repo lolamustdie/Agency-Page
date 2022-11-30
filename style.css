@@ -193,4 +193,49 @@ header {
     line-height: 155%;
     color: #494949;
 }
-  
+.aboutUs {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 5% 100px;
+}
+.aboutText {
+    width: 50%;
+    text-align: left;
+
+}
+.aboutText h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.015em;
+    color: #333333;
+}
+.aboutText p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #333333;
+}
+.aboutPhoto {
+    width: 50%;
+    height: auto;
+}
+.aboutPhoto img {
+    width: 100%;
+}
+.aboutBtn .start {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #0099FF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
