@@ -1,0 +1,198 @@
+@width: 20px;
+@link-color: rgba(0, 0, 0, 0.384) 0px 4px 8px;
+@conversion: 32px;
+@conversion-1: @conversion/2px;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-family: 'Inter';
+    font-style: normal;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 25px 25px 15px;
+}
+.logo img {
+    width: 168px;
+    height: auto;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+.menu ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    display: inline-block;
+}
+.contactBtn a {
+    display: block;
+    width: 200px;
+    height: 54px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #0099FF;
+    line-height: 54px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 4px;
+}І
+.new-start {
+    width: 80%;
+    box-shadow: @link-color;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    border-radius: 4px;
+}
+.new-start h4 {
+    font-weight: 700;
+    font-size: @conversion;
+    margin-top: 40px;
+}
+.new-start p {
+    font-weight: 400;
+    font-size: @conversion-1;
+    margin-top: @width;
+}
+.new-start .ns-cont img {
+    width: @width;
+    margin-right: 12px;
+}
+.ns-first {
+    padding-left: 96px;
+}
+.new-start .soc-media img {
+    width: 24px;
+    box-sizing: content-box;
+    padding-right: 41px;
+}
+.new-start .soc-media {
+    margin-bottom: 65px;
+    margin-top: 161px;
+}
+.ns-form > *, .ns-form label input[type=text] {
+    display: block;
+  }
+.ns-form > label {
+    font-weight: 600;
+    font-size: @width;
+    margin-top: @conversion;
+}
+.ns-form > label:first-of-type {
+    margin-top: 40px;
+}
+.ns-form input[type=text] {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-weight: 400;
+    font-size: 14px;
+    width: 263px;
+}
+.ns-form h6 {
+    padding-top: @conversion;
+    font-weight: 600;
+    font-size: 20px;
+}
+.ns-services {
+    font-weight: 500;
+    font-size: 18px;
+}
+.ns-services label {
+    padding-right: @width;
+    padding-top: @conversion-1;
+    cursor: pointer;
+}
+.ns-form button {
+    margin-top: 66px;
+    font-weight: 500;
+    font-size: @conversion-1 + 2;
+    width: 175px;
+    height: 53px;
+}
+.menu-nav {
+    margin-bottom: 200px;
+}
+.c-form {
+    padding: 2vw;
+}
+.footer {
+    height: 470px;
+    background-color: rgba(0, 153, 255, 0.04);
+}
+.div.first-block {
+    padding-left: 80px;
+}
+.first-block > a img {
+    width: 15px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+.first-block .b-logo, .first-block p {
+    padding-bottom: 32px;
+}
+.first-block p {
+    padding-right: 34px;
+    margin-block-end: 0;
+}
+.f-menu, .f-utpages {
+    margin-top: 40px;
+}
+.f-menu ul {
+    padding-inline-start: 0px;
+}
+.f-menu li a, .f-utpages li a {
+    font-weight: 400;
+    font-size: 18px;
+    color: #494949;
+}
+.f-menu li, .f-utpages li {
+    margin-bottom: 20px;
+}
+.f-sub h6 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.f-sub p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 32px;
+    padding-right: 20px;
+}
+.f-sub input {
+    display: block;
+    width: 308px;
+    height: 54px;
+    background: #333333;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.f-sub button {
+    width: 200px;
+    height: 54px;
+    background: #0099FF;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+}
